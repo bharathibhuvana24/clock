@@ -7,11 +7,12 @@
 
 }
 body{
-    display: block;
-    justify-content:;
+    display: flex;
+    justify-content:center;
     align-items: center;
     height: 100vh;
     background: radial-gradient(circle, #0b456b, #021c37);
+    overflow: hidden;
 }
 
 .clock
@@ -20,7 +21,6 @@ body{
     height: 500px;
     position: relative;
     border-radius: 50%;
-    background-color: rgb(193, 179, 179);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,7 +35,7 @@ body{
     position: absolute;
     border-radius: 50%;
     background: linear-gradient(to right, #00d9ff, #ee00ff);
-    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2) ;
+    box-shadow: 0 0 15px 15px rgba(0, 0, 0, 0.2);
     z-index: -1;
 }
 
@@ -51,8 +51,9 @@ body{
 }
 .number b
 {
-    transform: rotate(calc(30deg * var(--n)));
-    display:inline-box;
+    transform: rotate(calc(-30deg *var(--n)));
+    display: inline-block;
+
 }
 
 .center-dot
@@ -103,7 +104,7 @@ body{
     
     width: 6px;
     height: 200px;
-    background:linear-gradient(to top, #00d9ff, #ee00ff);
+    background: linear-gradient(to top, #00d9ff, #ee00ff);
 }
 
 
